@@ -1,0 +1,83 @@
+:title: c9s-lib | Multiplatform library
+// settings:
+:doctype: book
+:docinfo: shared
+:toc: left
+:sectanchors:
+:copyright: ©
+:dot: .
+:ellipsis: …
+:hatch: #
+:pilcrow: ¶
+:star: *
+:tilde: ~
+:ul: _
+:toclevels: 2
+:sectlinks:
+:sectnums!:
+ifndef::env-github[:icons: font]
+
+= {title}
+
+Demo project how to create Multiplatform library based on
+link:#ref-note-documentation[Kotlin Documentation]
+
+
+= Testing
+
+The common tests will be executed on all platforms instead of testing each platform separately.
+run the following Gradle task in a terminal.
+
+[source,bash]
+----
+$ ./gradlew check
+----
+
+[source,java,indent=0]
+.Base64Test.kt
+----
+include::src/commonTest/kotlin/org.jetbrains.base64/Base64Test.kt[tags=Base64Test]
+----
+
+
+
+
+
+
+
+
+
+[[ref-note-documentation]]
+[NOTE]
+====
+Kotlin Documentation  :
+
+- https://xxxhttps://kotlinlang.org/docs/multiplatform-library.html#write-cross-platform-code[kotlinlang multiplatform-library]
+- https://kotlinlang.org/docs/native-cocoapods.html[Native Coco PodsCocoaPods]
+====
+
+
+
+
+
+
+
+
+
+
+
+//[NOTE]
+//====
+//A sample note admonition. {title}
+//We can use gemoji icons in the Asciidoctor markup.
+//We assign an icon name to the document
+//attributes `tip-caption`, `note-caption` and `important-caption`.
+//====
+//
+//TIP: It works!
+//
+//IMPORTANT: Asciidoctor is awesome, don't forget!
+//
+//CAUTION: Don't forget to add the `...-caption` document attributes in the header of the document on GitHub.
+//
+//WARNING: You have no reason not to use Asciidoctor.
